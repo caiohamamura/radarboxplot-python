@@ -2,6 +2,12 @@
 
 This package provides the implementation of the radar-boxplot, a charting technique create and developed by the author (Caio Hamamura).
 
+## Installation
+
+The package is available for Python 3 only and can be installed via pip.
+
+`python -m pip install radarboxplot`
+
 It merges the concepts of both radar chart and the boxplot chart, allowing to compare multivariate data for multiple classes/clusters at a time. It provides a intuitive understanding over the data by creating radar polygons which can be compared in terms of shape and thickness, giving a meaningful insight towards identifying high inner variation and similar classes/clusters.
 
 By interpreting the radar-boxplot, it is possible to predict classification confusion over classes and understand why and what could be done to achieve a better result.
@@ -9,11 +15,13 @@ By interpreting the radar-boxplot, it is possible to predict classification conf
 The radar-boxplot draws two different regions colors representing the same a boxplot would, but for multiple attributes at once. The following example shows an example of the radar-boxplot over Iris Dataset. The inner red region represents the 25-75% percentiles of each attribute, while the blue area represents the total range, excluding the outliers as defined by [Tukey, 1977](https://amstat.tandfonline.com/doi/abs/10.1080/00031305.1978.10479236). Outlier appears as whiskers, just like the classic boxplot.
 
 <center>
+  
 IQR = Q3 - Q1
 
 LOWER_OUTLIER = Q1 - (1.5 x IQR)
 
 UPPER_OUTLIER = Q3 + (1.5 x IQR)
+
 </center>
 
 ![Radar-boxplot example with iris](https://github.com/caiohamamura/radarboxplot-python/blob/master/tests/radarboxplot.png?raw=true)
