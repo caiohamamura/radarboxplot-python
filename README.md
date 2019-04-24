@@ -11,11 +11,11 @@ The package is available for Python 3 only and can be installed via pip.
 
 ## Usage
 
-Basically the arguments are a two-dimensional array of `x` attributes, array of `y` classes (better the class name, because it will be the title of the subplots) and the `colNames` which are the column names to label the attributes accordingly. They must be in the same order os the columns of the `x` array.
+Basically the arguments are a two-dimensional array of `x` numerical attributes (either continuous and ordinal will make sense), array of `y` classes (better the class name, because it will be the title of the subplots) and the `colNames` which are the column names to label the attributes accordingly. They must be in the same order os the columns of the `x` array.
 
 Other parameters are:
 
-- `plotMedian`: if you want the median to be plotted
+- `plotMedian`: (boolean) if you want the median to be plotted
 - `color`: list of colors to paint the chart. The first will be the 25-75% percentile, the second color the total range and the third color will be the median line.
 - `nrows`: number of rows to arrange the subplots 
 - `ncols`: number of columns to arrange the subplots
