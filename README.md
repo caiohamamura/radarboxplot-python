@@ -61,6 +61,11 @@ x = iris['data']
 y = iris["target_names"][iris['target']]
 colNames = iris["feature_names"]
 
-radarboxplot(x, y, colNames, color=["orange", "green"], nrows=1, ncols=3)
+# Basic default plot
+radarboxplot(x, y, colNames)
+plt.show()
+
+# Use orange and green colors, plot median line, all in the same row
+radarboxplot(x, y, colNames, plotMedian=True, color=["orange", "green"], nrows=1, ncols=3)
 plt.show()
 ```
