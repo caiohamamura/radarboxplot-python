@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="radarboxplot",
-    version="0.1.3",
+    version="0.1.4",
     author="Caio Hamamura",
     author_email="caio.hamamura@usp.br",
     description="Implements the radar-boxplot using matplotlib",
