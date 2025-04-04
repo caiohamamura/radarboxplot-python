@@ -11,7 +11,7 @@ import math
 import numpy as np
 
 
-def radarboxplot(x, y, colNames, plotMedian=False, **kwargs):
+def radarboxplot(x, y, colNames, plotMedian=False, fig=None, **kwargs):
     nrows = kwargs.get("nrows")
     ncols = kwargs.get("ncols")
 
@@ -31,7 +31,8 @@ def radarboxplot(x, y, colNames, plotMedian=False, **kwargs):
         nClasses = len(classes)
         nrows = ncols = math.ceil(math.sqrt(nClasses))
     axs = []
-    fig = plt.figure()
+    if fig == None:
+        fig = plt.figure()
     for i in range(len(classes)):
         class_i = classes[i]
         values = standardized[y == class_i]
